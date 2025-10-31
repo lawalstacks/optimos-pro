@@ -76,7 +76,7 @@ export default function Community() {
             return (
               <motion.div key={card.title} variants={item}>
                 <Card className="h-full flex flex-col">
-                  <div className="relative h-48 mb-6 rounded-2xl overflow-hidden bg-gradient-to-br from-primary-900/20 to-secondary-900/20">
+                  <div className="relative h-48 mb-6 rounded-2xl overflow-hidden bg-linear-to-br from-primary-900/20 to-secondary-900/20">
                     <div className="absolute inset-0 flex items-center justify-center">
                       <Icon size={80} className={`text-${card.color}-400 opacity-30`} />
                     </div>
