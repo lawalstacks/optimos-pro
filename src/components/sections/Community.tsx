@@ -71,7 +71,7 @@ export default function Community() {
           viewport={{ once: true }}
           className="grid md:grid-cols-3 gap-8"
         >
-          {cards.map((card, index) => {
+          {cards.map((card) => {
             const Icon = card.icon
             return (
               <motion.div key={card.title} variants={item}>

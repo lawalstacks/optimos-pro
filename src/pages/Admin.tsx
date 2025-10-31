@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Plus, Edit, Trash2, LogOut, Eye, EyeOff } from 'lucide-react'
+import { motion } from 'framer-motion'
+import {  Edit, Trash2, LogOut, Eye, EyeOff } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
 import { BlogPost, BlogFormData } from '@/types/blog'
 import { login, fetchBlogPosts, createBlogPost, updateBlogPost, deleteBlogPost } from '@/lib/api'
-import { generateSlug, formatDate } from '@/lib/utils'
+import {  formatDate } from '@/lib/utils'
 
 export default function Admin() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
